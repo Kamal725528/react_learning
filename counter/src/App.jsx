@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  let [count, setCount]=useState(15);
+  let [count, setCount]=useState(15);  // this is hooks useState it change UI state without dom and change everywhere
 
   const add=()=>{
     setCount(count+1);
