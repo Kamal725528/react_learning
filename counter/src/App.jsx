@@ -8,11 +8,16 @@ function App() {
   let [count, setCount]=useState(15);  // this is hooks useState it change UI state without dom and change everywhere
 
   const add=()=>{
-    setCount(count+1);
+    if(count<20){
+      setCount(count+1);
+    }
   }
 
   const remove=()=>{
-    setCount(count-1);
+    if(count>0){
+      setCount(count-1);
+    }
+    
   }
 
 
