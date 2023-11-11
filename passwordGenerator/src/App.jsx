@@ -29,6 +29,7 @@ function App() {
 
   const copyToClipboard= useCallback(()=>{
     passref.current?.select();
+    // passref.current?.setSelectionRange(0,5);  // only 5 char selected
     window.navigator.clipboard.writeText(password);
 
   },[password])
@@ -82,3 +83,6 @@ function App() {
 }
 
 export default App
+
+/* defaultvalue nahi hoga defaultChecked hota hai for default value lene ke liye isi karan 
+se wo ui mein change ni kar raha tha cuase ambiguityin return so kuchh return hi ni kar raha tha */
