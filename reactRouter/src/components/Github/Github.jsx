@@ -22,7 +22,7 @@ import { useLoaderData } from "react-router-dom";
 
 // or use Loader() to enhance Ux by fast loading
 
- export const githubInfoLoader= async()=>{
+ export const githubInfoLoader= async ()=>{
 
     const response= await fetch('https://api.github.com/users/Kamal725528')
     return  response.json();
